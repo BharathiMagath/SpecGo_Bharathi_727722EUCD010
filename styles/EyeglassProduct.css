@@ -1,0 +1,298 @@
+/* Main container styling */
+.eyeglass-page {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Navigation bar styling */
+.navbar1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  z-index: 10;
+  width: calc(100% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+}
+
+.navbar .nav-button {
+  border: 1px solid #000;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button {
+  background-color: black;
+  color: #ffffff;
+}
+
+.navbar .nav-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Filters section styling */
+.filters {
+  width: 200px; /* Reduced width */
+  padding: 10px; /* Reduced padding */
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.filters h2 {
+  margin-top: 0;
+  font-size: 18px; /* Adjusted font size */
+}
+
+.filter-group {
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px; /* Reduced bottom margin */
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 6px; /* Reduced margin */
+}
+
+.filter-option label {
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* Reset button styling */
+.reset {
+  background-color: transparent;
+  border: 2px solid orange;
+  color: orange;
+  padding: 8px 12px; /* Reduced padding */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reset:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* Product list section styling */
+.products {
+  flex: 1;
+  padding: 15px; /* Adjusted padding */
+  margin-left: 200px; /* Adjusted space for the fixed filters */
+  margin-top: 50px;
+  overflow-y: auto;
+}
+
+/* Product header styling */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Adjusted bottom margin */
+}
+
+.product-header h2 {
+  margin: 0;
+  font-size: 20px; /* Adjusted font size */
+}
+
+.toggle-fit {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px; /* Adjusted padding */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-fit:hover {
+  background-color: #333;
+}
+
+/* Product grid styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 10px; /* Adjusted gap */
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: scale(0.9); /* Reduce grid size */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Product card styling */
+/* Product card styling */
+.product-card1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 90%;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.product-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Zoom effect on hover */
+.product-card:hover {
+  transform: scale(1.05); /* Slightly zoom in */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to highlight */
+}
+
+
+/* Wishlist button styling */
+/* Wishlist button styling */
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjusted position to align better */
+  background: none;
+  border: none;
+  border-radius: 50%; /* Make the button round */
+  width: 36px; /* Adjusted width for better appearance */
+  height: 36px; /* Adjusted height for better appearance */
+  font-size: 24px; /* Increased font size for better visibility */
+  color: rgb(202, 51, 51); /* Default color */
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  
+}
+
+/* Heart color change on hover */
+.wishlist:hover {
+  background-color: rgba(255, 0, 0, 0.1); /* Light background color on hover */
+}
+
+/* Active heart styling (when added to wishlist) */
+.wishlist.active {
+  color: red; /* Red color when active */
+}
+
+
+
+/* Product header styling */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px; /* Reduced bottom margin */
+  padding-top: 20px; /* Added top padding to move the heading down */
+}
+
+.product-header h2 {
+  margin: 0;
+  font-size: 40px;
+  padding-top: 20px; 
+  padding-left: 60px;
+  /* Adjusted font size */
+}
+
+/* Product list section styling */
+.products {
+  flex: 1;
+  padding: 15px; /* Adjusted padding */
+  margin-left: 200px; /* Adjusted space for the fixed filters */
+  margin-top: 30px; /* Reduced top margin to bring the grid up */
+  overflow-y: auto;
+}
+
+/* Product griAd styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 10px; /* Adjusted gap */
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: scale(0.9); /* Reduce grid size */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+/* EyeglassProduct.css */
+
+.product-card {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.product-image {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1 1 auto;
+}
+
+.product-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-info {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff5733;
+}
+
+.product-actions {
+  margin-top: 10px;
+}
+
+.product-actions button {
+  margin-right: 10px;
+}

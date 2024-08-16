@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:  white;
+}
+
+/* Page Container */
+.buy-now-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Added padding to ensure content does not overlap with navbar */
+  background-color: white;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* Space between SpecGo and buttons */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.specgo-title {
+  color: rgb(41, 4, 4);
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+}
+
+/* Home Button and Delivery Details Button */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Home Button */
+.home-button {
+  background-color: rgb(48, 26, 4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover,
+.home-button:active {
+  background-color: rgb(237, 236, 237);
+}
+
+/* Delivery Details Button */
+.delivery-details-button {
+  background-color: rgb(68,0,0);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delivery-details-button:hover,
+.delivery-details-button:active {
+  background-color: rgb(179, 179, 179);
+}
+
+/* Header */
+h2 {
+  margin-top: 20px; /* Adjusted margin to account for navbar */
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Product Cards */
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px auto; /* Added margin to ensure proper spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 15px rgba(48, 33, 3, 0.5); /* Purple shadow on hover */
+}
+
+.product-card img {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.product-details45 {
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Address Form Popup */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.popup-content {
+  background-color: rgb(248, 248, 248); /* Match navbar color */
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.address-input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.proceed-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+  background-color: darkgreen;
+}
+
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: darkred;
+}
+
+/* Order Summary */
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.product-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Delivery Address Form */
+.address-form {
+  margin-top: 20px;
+}
+
+/* Popup Styles */
+.popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.popup-content {
+  background-color: rgb(253, 253, 253); /* Match navbar color */
+  padding: 30px; /* Increased padding for larger size */
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px; /* Increased width */
+  position: relative;
+}
+
+.address-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the end */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.save-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  background-color: rgb(68,0,0); /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: rgb(220, 68, 7);
+}
+
+/* Flash Message Styles */
+.flash-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(234, 234, 234); /* Updated color */
+  color: black; /* Contrast text color */
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1001; /* Ensure it's above the popup */
+}
+
+.specgo-title {
+  color: rgb(37, 4, 4);
+  font-size: 32px; /* Increased font size */
+  font-weight: bold; /* Make the font bold */
+}
+
+.nav-title{
+  color:rgb(68,0,0);
+  font-size: 25px;
+  font-weight: bold;
+}

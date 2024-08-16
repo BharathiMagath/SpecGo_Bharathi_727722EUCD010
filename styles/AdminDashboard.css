@@ -1,0 +1,107 @@
+/* General styles for Admin Dashboard */
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(234, 234, 234);
+    color: white;
+  }
+  
+  .admin-navbar-left {
+    font-size: 1.4rem;
+    color: rgb(68, 0, 0);
+    font-weight: bold;
+}
+
+  
+  .admin-navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-icon {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: rgb(68,0,0);
+    color: white;
+  }
+  
+  .admin-main {
+    display: flex;
+    flex: 1;
+  }
+  
+  .admin-sidebar {
+    width: 200px;
+    background-color: rgb(182, 182, 182);
+    padding: 1rem;
+  }
+  
+  .admin-sidebar button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .admin-sidebar button.active {
+    background-color: rgb(68,0,0);
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the stat items horizontally */
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Ensure full width */
+    max-width: 300px; /* Set a max-width to control box size */
+    margin: 0 auto; /* Center the box */
+  }
+  
+  .stat-item:hover {
+    box-shadow: 0 0 15px rgba(225, 174, 6, 0.7); /* Purple shadow on hover */
+  }
+  
+  .stat-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: rgb(68,0,0);
+  }
+  
+  .stat-item p {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: rgb(53, 9, 9);
+  }
+  
+  .stat-item span {
+    font-size: 3rem;
+  }

@@ -1,0 +1,73 @@
+/* src/styles/SearchBar.css */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #000000;
+  }
+  
+  .search-bar button {
+    padding: 7px 20px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-left: none;
+    border-radius: 0 4px 4px 0; /* Reduced border-radius for a blunter look */
+    background-color:#2c1915;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .search-bar button:hover {
+    background-color: #171819;
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestions-list li {
+    padding: 12px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f1f1f1;
+  }
+  

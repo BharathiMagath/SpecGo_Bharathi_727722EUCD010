@@ -1,0 +1,25 @@
+.face-shape {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .face-shape-header {
+    margin-bottom: 20px;
+  }
+  
+  .face-shape-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .output-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .face-shape-link {
+    font-weight: bold;
+    color: #333;
+  }
+  

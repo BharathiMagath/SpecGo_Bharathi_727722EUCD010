@@ -1,0 +1,113 @@
+.users-management {
+    padding: 1rem;
+  }
+  
+  .add-user-button {
+    background-color: rgb(68, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .add-user-button:hover {
+    background-color: rgb(212, 139, 13);
+  }
+  
+  .add-user-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  
+  .add-user-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+  
+  .add-user-form button {
+    background-color: rgb(68, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .add-user-form button:hover {
+    background-color: rgb(177, 113, 16);
+  }
+  
+  .user-table {
+    margin-top: 1rem;
+  }
+  
+  /* Table outline in black */
+  .user-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Black outline for the table */
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 0.5rem;
+    border: 1px solid black;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table td {
+    text-align: left;
+  }
+  
+  /* General button styles */
+  .user-table button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    color: rgb(57, 24, 3);
+  }
+  
+  /* Edit button styles */
+  .user-table button.edit-button {
+    color: green;
+  }
+  
+  .user-table button:hover.edit-button {
+    color: darkgreen;
+  }
+  
+  /* Delete button styles */
+  .user-table button.delete-button {
+    color: red;
+  }
+  
+  .user-table button:hover.delete-button {
+    color: darkred;
+  }
+  
+  /* Block button styles */
+  .user-table button.block-button {
+    color: black;
+  }
+  
+  .user-table button:hover.block-button {
+    color: #333;
+  }
+  
+  
+  .user-table button.save-button {
+    color: rgb(46, 20, 4);
+  }
+  
+  .user-table button:hover.save-button {
+    color: black;
+  }

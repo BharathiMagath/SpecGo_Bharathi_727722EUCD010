@@ -1,0 +1,191 @@
+/* Ensure the container covers full height and removes default margin/padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white; /* Match the navbar background color */
+}
+
+/* Cart page container styling */
+.cart-page-unique123 {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+/* Navbar styling */
+.nav-bar-unique123 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(243, 243, 243); /* Match the navbar background color */
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0; /* Aligns the navbar to the top of the viewport */
+  left: 0; /* Aligns the navbar to the left edge */
+  z-index: 10; /* Ensure navbar is above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+}
+
+/* Home button styling */
+.home-button-unique123 {
+  background-color: rgb(44, 5, 5); /* Changed to brown */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: auto; /* Push the button to the right */
+}
+
+/* Home button hover effect */
+.home-button-unique123:hover,
+.home-button-unique123:active {
+  background-color: rgb(223, 151, 16); /* Changed to purple on hover */
+}
+
+/* Cart title styling */
+.cart-title-unique123 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px; /* Reduced space above the title */
+  margin-bottom: 20px; /* Reduced space below the title */
+  padding-top: 6%; /* Reduced padding at the top */
+  padding-bottom: 1%; /* Reduced padding at the bottom */
+}
+
+.cart-title-unique123::before {
+  content: '🛒 ';
+}
+
+/* Grid for cart items */
+.cart-grid-unique123 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Reduced gap between product cards */
+  width: 100%;
+  margin-top: 50px; /* Reduced space below the cart title */
+}
+
+/* Product card styling */
+.product-card-unique123 {
+  border: 1px solid #ddd;
+  padding: 10px; /* Reduced padding inside the product card */
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 10px auto; /* Reduced margin around the product card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+/* Product card hover effect */
+.product-card-unique123:hover {
+  box-shadow: 0 0 15px rgba(77, 31, 6, 0.5); /* Changed to purple shadow on hover */
+}
+
+.product-card-unique123 img {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-right: 10px; /* Reduced space between image and text */
+  margin-top: 5px; /* Reduced space above the image */
+}
+
+.product-details-unique123 {
+  flex: 1;
+  line-height: 1.5;
+  margin-top: 0; /* Reduced space above the details */
+}
+
+.power-controls-container-unique123 {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.power-control-unique123 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Power control button styling */
+.power-control-unique123 button {
+  background-color: rgb(31, 4, 4); /* Changed to brown */
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Power control button hover effect */
+.power-control-unique123 button:hover {
+  background-color: rgb(236, 236, 236); /* Changed to purple on hover */
+}
+
+.quantity-select-unique123 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-select-unique123 label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.product-buttons-unique123 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buy now button styling */
+.buy-now-button-unique123 {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Remove button styling */
+.remove-button-unique123 {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Total price container styling */
+.total-price-unique123 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.total-price-unique123 .buy-now-button-unique123 {
+  margin-top: 10px;
+}

@@ -1,0 +1,103 @@
+.profile-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 25px;
+    border: 3px solid #dcdcdc;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333333;
+}
+
+.profile-details {
+    margin-bottom: 30px;
+}
+
+.profile-details h2 {
+    font-size: 22px;
+    color: #666666;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 18px;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.profile-details input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-actions button {
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-actions button:hover {
+    background-color: #ff5733;
+}
+
+.profile-actions button.delete-button {
+    background-color: black /* Bootstrap danger color */
+}
+
+.profile-actions button.delete-button:hover {
+    background-color: #c9302c; /* Darker shade of danger */
+}

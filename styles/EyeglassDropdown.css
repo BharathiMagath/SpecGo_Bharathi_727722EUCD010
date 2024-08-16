@@ -1,0 +1,36 @@
+.dropdown-container {
+    position: absolute; /* Absolutely position the dropdown */
+    top: 70px; /* Adjust this value based on the header height */
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the dropdown is on top of other content */
+  }
+  
+  .dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  
+  .dropdown-column h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-links a:hover + .dropdown-container,
+  .dropdown-container:hover {
+    display: block;
+  }
+  

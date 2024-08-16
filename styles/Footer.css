@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: rgb(179, 179, 179); /* Light brown background */
+    color: rgb(68, 0, 0); /* Text color */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(68, 0, 0); /* Text color */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid rgb(68, 0, 0);
+    padding-top: 20px;
+}
+
+/* Container for app and social media links */
+.app-social-links {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 10px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 20px; /* Space above the section */
+}
+
+.app-social-links img {
+    width: 40px; /* Set a consistent size */
+    height: 40px;
+    border-radius: 50%; /* Make the logos round */
+    object-fit: cover; /* Ensure images fit well within the circle */
+    transition: transform 0.2s ease;
+}
+
+.app-social-links img:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(68, 0, 0); /* Text color */
+}

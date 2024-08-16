@@ -1,0 +1,67 @@
+/* Popup Styles */
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
+  .popup-content {
+    background-color: rgb(235, 235, 235); /* Match navbar color */
+    padding: 30px; /* Increased padding for larger size */
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px; /* Increased width */
+    position: relative;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .address-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the end */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+  }
+  
+  .save-button {
+    background-color: #236d26; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  
+  .close-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #e53935;
+  }
